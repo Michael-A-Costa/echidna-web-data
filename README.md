@@ -4,7 +4,7 @@ A Claude plugin for everyday web-data jobs: audit a website's SEO, broken links 
 
 ## How it works
 
-The plugin adds one connector, **echidna-web-data**, which is the Apify MCP server (`https://mcp.apify.com`) limited to eleven Apify Actors published by [humble-echidna](https://apify.com/humble-echidna), plus two read-only helpers for fetching the results of long runs. It also adds seven skills that tell Claude when and how to use each tool.
+The plugin adds one connector, **echidna-web-data**, which is the Apify MCP server (`https://mcp.apify.com`) limited to eleven Apify Actors published by [humble-echidna](https://apify.com/humble-echidna), plus four helpers that Apify's server adds for long runs: `get-actor-run`, `get-dataset-items` and `get-key-value-store-record` read a run's status and results, and `abort-actor-run` stops a run. It also adds seven skills that tell Claude when and how to use each tool.
 
 | Skill | Tools |
 |---|---|
@@ -34,6 +34,7 @@ The plugin is free. Each Actor charges per result on your Apify account, and Api
 - The plugin's author does not receive your inputs, results, or Apify credentials. As the Actors' developer, the author can see aggregate usage statistics that Apify provides to all developers.
 - The author keeps no data from your use of the plugin, so there is nothing to retain or delete on our side. Apify's retention rules apply to your Apify storage.
 - Apify's privacy policy: https://apify.com/privacy-policy.
+- Full privacy policy for this plugin: [PRIVACY.md](PRIVACY.md).
 
 ## Support
 
