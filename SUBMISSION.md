@@ -66,7 +66,7 @@ Put them in `docs/screenshots/` and add them to the README under a "Screenshots"
 ## Support contact
 
 - **Public support channel:** GitHub issues at https://github.com/Michael-A-Costa/echidna-web-data/issues, and the Issues tab on each Actor at https://apify.com/humble-echidna. Both are in the README and PRIVACY.md.
-- **Contact email for Anthropic:** `<SUPPORT EMAIL: Michael to choose>`. The Compliance step shows the email of the claude.ai account that submits. The Software Directory Policy asks for "verified contact information and support channels for users with product or security concerns." Don't put a personal address in this public repository. If a public support email is wanted, use a dedicated alias.
+- **Contact email for Anthropic:** `<SUPPORT EMAIL: owner to choose>`. The Compliance step shows the email of the claude.ai account that submits. The Software Directory Policy asks for "verified contact information and support channels for users with product or security concerns." Don't put a personal address in this public repository. If a public support email is wanted, use a dedicated alias.
 
 ## Checks already done (2026-09-27)
 
@@ -90,7 +90,7 @@ Not done: the portal's own **Validate**, which runs extra checks for the README,
 Prerequisites: a Pro, Max, Team or Enterprise Claude plan, since free accounts can't submit. On Pro or Max, you submit from your own account.
 
 1. **Merge this branch.** The directory follows the repository's default branch (`main`) unless you name another. Merge `directory` into `main` and push. Wait until `hiring-signals` shows at https://apify.com/humble-echidna.
-2. **Test on your own account first.** In Claude Code, run `claude --plugin-dir ~/projects/mms/echidna-web-data`, try prompts 1 and 3, and complete the Apify OAuth sign-in. Then, in claude.ai, go to **Customize > Plugins > Add > Upload plugin** with a zip of the folder, connect the connector on the plugin's **Connectors** tab, and try one prompt in chat.
+2. **Test on your own account first.** In Claude Code, run `claude --plugin-dir <path to this repository>`, try prompts 1 and 3, and complete the Apify OAuth sign-in. Then, in claude.ai, go to **Customize > Plugins > Add > Upload plugin** with a zip of the folder, connect the connector on the plugin's **Connectors** tab, and try one prompt in chat.
 3. **Connect GitHub** to claude.ai in the organization you'll submit from. The portal checks that the connected account can push to `Michael-A-Costa/echidna-web-data`. The repository is public, so it doesn't need the Claude GitHub App.
 4. Open **https://claude.ai/directory/manage** and select **Submit new**, then **Plugin bundle**.
 5. On the **Source** step:
@@ -119,4 +119,4 @@ Limits: 10 submissions per organization per 24 hours, drafts included, and one s
 - Apify, Claude Desktop integration: https://docs.apify.com/integrations/claude-desktop. It says Apify is listed in Claude's connector directory.
 - Unite.AI news report on the portal opening: https://www.unite.ai/anthropic-opens-directory-submission-portal-for-claude-plugins/. It was seen only as a search-result summary and not opened.
 
-Not read: the Anthropic Software Directory Terms (https://support.claude.com/en/articles/13145338-anthropic-software-directory-terms), and the portal itself, which needs Michael's signed-in paid account.
+Not read: the Anthropic Software Directory Terms (https://support.claude.com/en/articles/13145338-anthropic-software-directory-terms), and the portal itself, which needs the owner's signed-in paid account.
