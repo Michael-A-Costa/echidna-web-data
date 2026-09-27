@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "echidna-web-data": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=humble-echidna/page-to-markdown,humble-echidna/document-to-text,humble-echidna/seo-audit,humble-echidna/tech-stack-detector,humble-echidna/url-checker,humble-echidna/sitemap-urls,humble-echidna/ats-jobs,humble-echidna/eu-ted-tenders,humble-echidna/company-registers,humble-echidna/rss-feed-reader,humble-echidna/audio-transcriber,get-actor-run,get-dataset-items"
+    }
+  }
+}

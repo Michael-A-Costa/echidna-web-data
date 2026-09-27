@@ -1,0 +1,23 @@
+{
+  "name": "echidna-web-data",
+  "displayName": "Echidna Web Data",
+  "version": "1.0.0",
+  "description": "Audit websites (SEO, broken links, tech stack), turn pages and documents into Markdown, research company hiring, search EU/UK tenders and company registers, and transcribe audio. Runs on your own Apify account.",
+  "author": {
+    "name": "humble-echidna",
+    "url": "https://apify.com/humble-echidna"
+  },
+  "homepage": "https://apify.com/humble-echidna",
+  "repository": "https://github.com/Michael-A-Costa/echidna-web-data",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "web-scraping",
+    "markdown",
+    "rag",
+    "jobs",
+    "tenders",
+    "transcription",
+    "apify"
+  ]
+}
