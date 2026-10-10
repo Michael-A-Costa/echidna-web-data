@@ -24,6 +24,12 @@ It reads jobs directly from each company's applicant tracking system, so posting
 - `includeDescription: false` when the user only needs titles and links (smaller output).
 - `onlyNewJobs: true` on repeat runs returns only jobs added since the last run with the same input.
 
+Known-good input, from a published Store example that ran successfully. Swap in the user's companies:
+
+```json
+{"companies": ["Linear", "bunq", "https://boards.greenhouse.io/greenhouse"], "includeDescription": false}
+```
+
 Summarize by company: open role count, departments, locations or remote, and salary ranges where the posting states them. For trend questions, compare `postedAt` dates. Quote job titles and link each job's URL.
 
 ## Hiring signals: `hiring-signals`

@@ -15,6 +15,12 @@ Use `humble-echidna/academic-papers`.
 - `onlyNew: true` with `sort: "newest"` for a repeat search that returns only works not seen before (a paper alert).
 - Without the user's own `openalexApiKey`, OpenAlex allows a small free daily budget (about 100 searches); a large literature sweep may need the user's free key.
 
+Known-good input (the most-cited work on a topic), from a published Store example that ran successfully. Swap in the user's topic:
+
+```json
+{"queries": ["large language models"], "sort": "mostCited", "maxResultsPerQuery": 25}
+```
+
 Report each work with its title, authors, year, venue, citation count, DOI link, and an open-access link when there is one. Do not describe a paper's findings from the title alone; read the abstract when it is returned, or offer to fetch the open-access PDF with `document-to-text`.
 
 `academic-papers` is new; if it is missing from the connector's tool list, it is not published yet: say so.

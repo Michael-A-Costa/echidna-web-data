@@ -12,6 +12,12 @@ Use `humble-echidna/company-registers`.
 - **New French companies**: `mode: "newCompanies"` with `sinceDays` (default 3) and activity or region filters. This reads the official BODACC announcements.
 - `crossLink: true` (the default) adds each French company's LEI when it has one.
 
+Known-good input (search by name), from a published Store example that ran successfully. Swap in the user's company names:
+
+```json
+{"mode": "search", "searchTerms": ["Airbus", "Michelin"], "registers": ["france", "lei"], "maxResultsPerSearch": 10}
+```
+
 Report the legal name, identifiers, status, address, activity, size, and when found, the LEI and parent. Say which register each fact came from.
 
 $3 per 1,000 companies returned, on the user's own Apify account.

@@ -1,7 +1,7 @@
 {
   "name": "echidna-web-data",
   "displayName": "Echidna Web Data",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Audit websites (SEO, broken links, tech stack), enrich business leads, turn pages, articles and documents into Markdown, track company hiring signals, search EU/UK tenders, company registers and research papers, transcribe audio, and download or OCR images. Runs on your own Apify account.",
   "author": {
     "name": "humble-echidna",

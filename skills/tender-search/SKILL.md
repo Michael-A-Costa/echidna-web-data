@@ -17,6 +17,14 @@ Use `humble-echidna/eu-ted-tenders`.
 - `openOnly: true` keeps only tenders still accepting bids.
 - `maxResultsPerQuery` (default 20).
 
+## Known-good input
+
+Open EU software tenders, from a published Store example that ran successfully. Swap in the user's keywords:
+
+```json
+{"sources": ["ted"], "queries": ["software"], "noticeTypes": ["competition"], "openOnly": true, "maxResultsPerQuery": 20}
+```
+
 ## Report
 
 List each notice with the buyer, title, country, estimated value if stated, deadline, and the notice URL. Sort open tenders by deadline. Point out any that close within 14 days.

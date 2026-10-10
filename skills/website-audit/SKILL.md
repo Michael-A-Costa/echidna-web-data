@@ -11,6 +11,14 @@ Combine three tools from the `echidna-web-data` connector, then write one priori
 2. **Tech stack**: `humble-echidna/tech-stack-detector` with `urls: ["<site>"]`. It returns technologies grouped by category (CMS, analytics, CDN, frameworks, payment, and so on), with versions where the page shows them.
 3. **Redirects and status codes** (only when the user cares about URL hygiene or a migration): `humble-echidna/url-checker` with `mode: "sitemap"` and `urls: ["<site>"]`. This checks every URL in the sitemap for its status code, redirect chain and canonical URL.
 
+## Known-good input
+
+`humble-echidna/seo-audit`, from a published Store example that ran successfully. Swap in the user's site:
+
+```json
+{"startUrls": ["https://crawlee.dev/"], "maxPages": 20}
+```
+
 ## Report
 
 - Start with the site score and the three to five fixes that would move it most. Group by issue, not by page ("12 pages have no meta description"), and name example URLs.

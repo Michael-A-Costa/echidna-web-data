@@ -21,6 +21,12 @@ Each result lists the image's source page, URL, size and where it was saved. Giv
 - `pageSegmentation`: `auto` for pages and documents, `singleBlock` for a receipt or paragraph, `singleLine` for one line, `sparse` for scattered labels, `autoWithOrientation` for sideways text.
 - `includeLines` / `includeWords: true` add bounding boxes and confidence for each line or word.
 
+Known-good input, from a published Store example that ran successfully. Swap in the user's image links:
+
+```json
+{"urls": ["https://upload.wikimedia.org/wikipedia/commons/d/d7/The_Quick_Brown_Fox_Newspaper_Reference.png"]}
+```
+
 Quote the text, and flag low-confidence parts instead of guessing.
 
 `image-ocr` is new; if it is missing from the connector's tool list, it is not published yet: for scans, `document-to-text` with `ocr: true` also reads image files.
@@ -31,4 +37,4 @@ To read the text in every image on a page, run `bulk-image-downloader` first, th
 
 ## Cost
 
-Charged on the user's own Apify account: image downloads $7 per 1,000 page or image URLs given; OCR $4 per 1,000 images.
+Charged on the user's own Apify account: image downloads $7 per 1,000 page or image URLs given, plus the run's Apify platform usage (it grows with the bytes downloaded, so large images cost more); OCR $4 per 1,000 images.

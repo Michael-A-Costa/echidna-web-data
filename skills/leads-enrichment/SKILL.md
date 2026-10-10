@@ -33,6 +33,12 @@ Skip step 1 for sites that steps 2 and 3 already reached, if the user wants to s
 
 **Dataset input, when available.** Newer versions of `url-checker`, `tech-stack-detector` and `seo-audit` accept `datasetId` (plus an optional `datasetUrlField`, found automatically when empty) instead of a URL list, and copy each business's name into their results (`sourceTitle`). If the tool's input schema has `datasetId`, pass the Google Maps dataset directly and skip step 1's extraction. If it does not, use the URL list; everything else works the same.
 
+**Known-good input** for `humble-echidna/tech-stack-detector`, from a published Store example that ran successfully. Swap in the user's websites:
+
+```json
+{"urls": ["https://www.allbirds.com/", "https://www.gymshark.com/", "https://wordpress.org/"]}
+```
+
 ## 3. Join and report
 
 Join the three results on the website's domain. Then:

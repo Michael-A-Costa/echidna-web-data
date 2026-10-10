@@ -12,6 +12,12 @@ description: Convert web pages, whole documentation sites, blog and news article
 - For RAG, set `chunkMarkdown: true` and `maxChunkChars` (the default is 2000). Each chunk keeps its page URL and heading path.
 - The output is the main content only: navigation, cookie banners and footers are removed.
 
+Known-good input (a docs site into RAG chunks), from a published Store example that ran successfully. Swap in the user's site and page limit:
+
+```json
+{"urls": ["https://crawlee.dev/"], "crawlWholeSite": true, "maxPagesPerSite": 20, "chunkMarkdown": true}
+```
+
 ## Documents: `humble-echidna/document-to-text`
 
 - `urls: [...]` pointing at PDF, Word (.docx) or Excel (.xlsx) files, or images of text.

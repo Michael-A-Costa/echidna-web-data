@@ -24,6 +24,12 @@ Several tools remember the previous run with the same input and can return only 
 
 `hiring-signals`, `remote-jobs`, `article-extractor` and `academic-papers` are new; one that is missing from the connector's tool list is not published yet.
 
+Known-good input for `humble-echidna/rss-feed-reader` (new posts from three blogs), from a published Store example that ran successfully. Swap in the user's feeds:
+
+```json
+{"feeds": ["https://blog.rust-lang.org/feed.xml", "https://www.djangoproject.com/rss/weblog/", "https://github.blog/feed/"], "onlyNewItems": true}
+```
+
 The first run returns everything and sets the baseline; tell the user so. Keep the input identical between runs, because the remembered state is tied to it.
 
 For a recurring watch, suggest an Apify schedule on the user's account (Apify Console → Schedules) so the check runs without Claude, and the user can come back and ask for a summary of the latest results.

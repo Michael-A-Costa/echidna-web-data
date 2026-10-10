@@ -37,7 +37,7 @@ Newly published Actors appear in the connector as soon as they are live in the A
 
 ## Pricing
 
-The plugin is free. Each Actor charges per result on your Apify account, and Apify's free plan includes monthly credit. Prices at 2026-09-27, per 1,000 results:
+The plugin is free. Each Actor charges per result on your Apify account, and Apify's free plan includes monthly credit. Prices at 2026-10-09 on Apify's free plan, per 1,000 results (on most Actors, paid Apify plans pay less per result):
 
 | Actor | Price |
 |---|---|
@@ -52,7 +52,7 @@ The plugin is free. Each Actor charges per result on your Apify account, and Api
 | eu-ted-tenders | $2 per 1,000 notices |
 | company-registers | $3 per 1,000 companies |
 | audio-transcriber | $6 per 1,000 audio minutes (base model), $15 per 1,000 (small model) |
-| bulk-image-downloader | $7 per 1,000 page or image URLs |
+| bulk-image-downloader | $7 per 1,000 page or image URLs, plus the run's Apify platform usage |
 | image-ocr | $4 per 1,000 images |
 
 Each run also costs $0.00005 to start. Current prices are on each Actor's page at https://apify.com/humble-echidna. The skills tell Claude to confirm with you before large or costly runs.
